@@ -97,7 +97,9 @@ public class DemoAvanzado {
 
         // Agregar técnicos
         Tecnico tec1 = new Tecnico(20, "Roberto Seguridad", Categoria.SEGURIDAD);
+        Tecnico tec2 = new Tecnico(21, "Elena Ciber", Categoria.SEGURIDAD);
         sistemaConObservers.agregarTecnico(tec1);
+        sistemaConObservers.agregarTecnico(tec2);
 
         // Crear cliente y tickets - los observadores serán notificados
         Cliente cliente2 = new Cliente(200, "María García", "maria@test.com");
