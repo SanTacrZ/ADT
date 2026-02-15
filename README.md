@@ -16,3 +16,26 @@ Esta versión reduce el tiempo de creación de objetos en un **59%** comparado c
 javac -d bin javaOptimo/**/*.java
 java -cp bin javaOptimo.Demo
 ```
+
+## 📝 Ejemplo de Funcionamiento (Reporte)
+Reporte de ejecución de la versión optimizada con notificaciones reactivas:
+
+```text
+--- Creando tickets ---
+[NOTIFICACIÓN] Nuevo ticket creado: ID 1 - No funciona el internet
+[NOTIFICACIÓN] Nuevo ticket creado: ID 2 - Error en la base de datos
+
+=== ESTADÍSTICAS DEL SISTEMA ===
+Total de tickets:      2
+Tickets pendientes:    2
+
+--- Asignando tickets ---
+[NOTIFICACIÓN] Ticket 1 asignado a: Carlos Redes
+Ticket 1 procesado.
+
+--- Actualizando estados ---
+[NOTIFICACIÓN] Ticket 1 RESUELTO.
+```
+javac -d bin javaOptimo/**/*.java
+java -cp bin javaOptimo.Demo
+```
