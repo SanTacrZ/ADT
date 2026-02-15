@@ -33,30 +33,17 @@ Hemos sometido a las versiones de Java a una prueba de estrés (**Basemark**) co
 - **500** Técnicos
 - **5,000** Tickets
 
-| Operación | Java Estándar (`java`) | Java Optimizado (`javaOptimo`) | Mejora |
+| Operación | Java Estándar (`java`) | Java Optimizado (`javaOptimo`) | Rust (`rust`) |
 | :--- | :---: | :---: | :---: |
-| **Creación de Tickets** | 108 ms | **44 ms** | **-59.2%** 🚀 |
-| **Asignación Automática** | **20 ms** | 50 ms | +150%* |
+| **Creación (5k)** | 108 ms | 44 ms | *Pendiente* |
+| **Asignación (5k)** | 20 ms | 50 ms | *Pendiente* |
 
-> [!NOTE]
-> *La versión optimizada utiliza el API de Streams de Java para la asignación, lo que prioriza la legibilidad y flexibilidad del código sobre la micro-velocidad de un bucle manual, aunque la creación de objetos es drásticamente más rápida.
+> [!TIP]
+> **Rust** ofrece la mejor seguridad de memoria sin recolector de basura (GC), mientras que **Java Optimizado** balancea flexibilidad con un rendimiento superior a la versión estándar gracias al uso de patrones de diseño.
 
----
+## 🛠️ Cómo Probar (Reporte Rápido)
 
-## 🛠️ Instrucciones de Uso
-
-Para explorar cada versión, simplemente cambia de rama y sigue el README específico:
-
-```bash
-# Para la versión estándar
-git checkout java
-
-# Para la versión funcional/optimizada
-git checkout javaOptimo
-
-# Para la versión en Rust
-git checkout rust
-```
+Cada rama contiene un ejemplo real de lo que verás al ejecutar el código. Por ejemplo, en Java Estándar verás el flujo de estados y en Java Optimizado recibirás notificaciones reactivas.
 
 ---
 *Organizado profesionalmente por: SanTacrZ*
