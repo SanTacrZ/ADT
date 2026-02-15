@@ -4,5 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-# No heavy dependencies needed for core logic, keeping it clean and fast.
-# We could add 'chrono' for better time handling if needed, but for now we'll use std.
+rand = "0.8"
